@@ -1,0 +1,83 @@
+:root{
+    --light-bg: #fffbef;
+    --normal-bg: #f8f5e4;
+    --dark-bg: #f2efdf;
+    --fg: #5c6a72;
+    --fg-dark: #333c43;
+    --err: #F85552;
+    --red: #f85552;
+    --good: #35a77c;
+    --good-soft: #93b259;
+    --blue: #3a95c5;
+}
+
+html, body {
+    background-color: var(--normal-bg);
+    color: var(--fg);
+    font-family: 'EB Garamond', Garamond, serif;
+    font-size: 1.1em;
+}
+
+h1, h1, h3 { color: var(--fg-dark);}
+
+h1 {
+    font-weight: 700;
+}
+
+h2, h3 {
+    font-style: italic;
+}
+
+.inputarea, .outputarea {
+    
+    padding: .2rem;
+    min-height: 6rem;
+    min-width: 10rem;
+
+    background-color: var(--light-bg);
+    color: var(--fg-dark);
+
+    border: 2px solid;
+    border-radius: 3%;
+}
+
+.inputarea {
+    border-color: var(--blue);
+    font-size: 13pt;
+    font-family: "Fira Mono", monospace;
+}
+
+.outputarea.is-ok, .outputarea.is-neutral {
+    border-color: var(--good-soft);
+}
+
+.outputarea.is-bad {
+    border-color: var(--err);
+}
+
+.error-section {
+    overflow: visible;
+}
+
+ol.errors {
+    color: var(--fg-dark);
+
+}
+
+
+
+
+ol.errors>li {
+    display: list-item;
+}
+
+ol.errors>li::marker {
+    color: var(--err);
+    font-size: 1.1em;
+    font-style: italic;
+}
+ol.errors>li:not(:last-child) {
+    padding-bottom: .3em;
+    border-bottom: dashed 1px var(--fg);
+}
+

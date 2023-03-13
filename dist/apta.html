@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Fira+Mono&display=swap" rel="stylesheet"> 
+
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1 class="title">APTA online converter</h1>
+  <div class="aboutbox">
+    <p class="about">
+      This converts <a href="https://www.reddit.com/r/conlangs/comments/92dkxf/apta/">APTA</a> text to IPA.
+    </p>
+  </div>
+  <div class="formpart">
+    <label for="output">
+      <h3 class="fieldtitle">APTA</h3>
+      <textarea class="inputarea" cols="30" id="input" name="input" rows="10">
+
+      </textarea>
+    </label>
+    <label for="output">
+      <h3 class="fieldtitle">IPA</h3>
+      <div class="outputarea is-neutral" id="output" name="output">
+
+      </div>
+    </label>
+    <fieldset class="buttons">
+      <legend>Levers</legend>
+      <label for="keepup">Auto-update output</label>
+      <input class="keepup" name="keepup" type="checkbox" value="false" id="keepup" />
+      <button class="doit" id="doit">Translate!</button>
+    </fieldset>
+
+  </div>
+  <div id="error-section">
+    <h3>Errors</h3>
+    <ol id="error-list" class="errors"></ol>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

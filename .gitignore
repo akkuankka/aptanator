@@ -1,0 +1,7 @@
+.projectile
+package-lock.json
+node_modules
+old-src
+lib/bs
+src/*.mjs
+tests/*.mjs

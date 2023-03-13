@@ -1,0 +1,23 @@
+{
+  "name": "aptanator",
+  "version": "1.0.0",
+  "description": "Convert apta to IPA",
+  "private": "true",
+  "main": "main.js",
+  "scripts": {
+    "res:build": "rescript",
+    "res:start": "rescript build -w",
+    "bpack": "rescript build && webpack",
+    "test": "rescript && retest tests/*.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rescript": "^10.1.2"
+  },
+  "devDependencies": {
+    "rescript-test": "^4.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
